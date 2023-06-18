@@ -1,0 +1,93 @@
+{
+    "home": "accueil",
+    "collection": "collection",
+    "about": "a propos",
+    "contact": "contact",
+    "sign out": {
+        "1": "Déconnexion"
+    },
+    "your profile": {
+        "1": "Votre profil"
+    },
+    "Books For You": {
+        "1": "Livres pour vous"
+    },
+    "read more": {
+        "1": "En savoir plus"
+    },
+    "Shop Now": {
+        "1": "Achetez maintenant"
+    },
+    "Best Sell This Week": {
+        "1": "Meilleure vente cette semaine"
+    },
+    "Latest Books": {
+        "1": "Derniers livres"
+    },
+    "To Discovered": {
+        "1": "À découvrir"
+    },
+    "Best Arabic Books": {
+        "1": "Meilleurs livres arabes"
+    },
+    "Best Kids Books": {
+        "1": "Meilleurs livres pour enfants"
+    },
+    "Best Adults Books": {
+        "1": "Meilleurs livres pour adultes"
+    },
+    "By Author": {
+        "1": "Par auteur"
+    },
+    "Discoverd Popular Books In This Month": {
+        "1": "Découvrez les livres populaires de ce mois-ci"
+    },
+    "Discoverd Arabic Books": {
+        "1": "Livres arabes découverts"
+    },
+    "Discoverd New Books": {
+        "1": "Découverte de nouveaux livres"
+    },
+    "Discoverd Kids Books": {
+        "1": "Livres pour enfants découverts"
+    },
+    "Discoverd Adults Books": {
+        "1": "Découverte des livres pour adultes"
+    },
+    "Subscribe to Newsletter": {
+        "1": "S'inscrire à la Newsletter"
+    },
+    "To Get Notification About Latest Books And Updates": {
+        "1": "Pour recevoir une notification sur les derniers livres et mises à jour"
+    },
+    "Add to order": {
+        "1": "Ajouter à la commande"
+    },
+    "Login": {
+        "1": "Connexion"
+    },
+    "Register": {
+        "1": "S'inscrire"
+    },
+    "Author": {
+        "1": "Auteur"
+    },
+    "Category": {
+        "1": "Catégorie"
+    },
+    "Price": {
+        "1": "Prix"
+    },
+    "Language": {
+        "1": "Langue"
+    },
+    "Published At": {
+        "1": "Publié À"
+    },
+    "Number Of Pages": {
+        "1": "Nombre De Pages"
+    },
+    "Description": {
+        "1": "Description"
+    }
+}

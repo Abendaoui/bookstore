@@ -1,0 +1,93 @@
+{
+    "home": "home",
+    "collection": "collection",
+    "about": "about",
+    "contact": "contact",
+    "sign out": {
+        "1": "sign out"
+    },
+    "your profile": {
+        "1": "your profile"
+    },
+    "Books For You": {
+        "1": "Books For You"
+    },
+    "read more": {
+        "1": "read more"
+    },
+    "Shop Now": {
+        "1": "Shop Now"
+    },
+    "Best Sell This Week": {
+        "1": "Best Sell This Week"
+    },
+    "Latest Books": {
+        "1": "Latest Books"
+    },
+    "To Discovered": {
+        "1": "To Discovered"
+    },
+    "Best Arabic Books": {
+        "1": "Best Arabic Books"
+    },
+    "Best Kids Books": {
+        "1": "Best Kids Books"
+    },
+    "Best Adults Books": {
+        "1": "Best Adults Books"
+    },
+    "By Author": {
+        "1": "By Author"
+    },
+    "Discoverd Popular Books In This Month": {
+        "1": "Discoverd Popular Books In This Month"
+    },
+    "Discoverd Arabic Books": {
+        "1": "Discoverd Arabic Books"
+    },
+    "Discoverd New Books": {
+        "1": "Discoverd New Books"
+    },
+    "Discoverd Kids Books": {
+        "1": "Discoverd Kids Books"
+    },
+    "Discoverd Adults Books": {
+        "1": "Discoverd Adults Books"
+    },
+    "Subscribe to Newsletter": {
+        "1": "Subscribe to Newsletter"
+    },
+    "To Get Notification About Latest Books And Updates": {
+        "1": "To Get Notification About Latest Books And Updates"
+    },
+    "Add to order": {
+        "1": "Add to order"
+    },
+    "Login": {
+        "1": "Login"
+    },
+    "Register": {
+        "1": "Register"
+    },
+    "Author": {
+        "1": "Author"
+    },
+    "Category": {
+        "1": "Category"
+    },
+    "Price": {
+        "1": "Price"
+    },
+    "Language": {
+        "1": "Language"
+    },
+    "Published At": {
+        "1": "Published At"
+    },
+    "Number Of Pages": {
+        "1": "Number Of Pages"
+    },
+    "Description": {
+        "1": "Description"
+    }
+}

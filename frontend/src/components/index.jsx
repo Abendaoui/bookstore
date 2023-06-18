@@ -1,0 +1,10 @@
+export { default as BooksContainer } from "./BooksContainer";
+export { default as Hero } from "./Hero";
+export { default as NewBooks } from "./NewBooks";
+export { default as ToDiscoverd } from "./ToDiscoverd";
+export { default as ArabicBooks } from "./ArabicBooks";
+export { default as KidsBooks } from "./KidsBooks";
+export { default as AdulsBooks } from "./AdultsBooks";
+export { default as ByAuthor } from "./ByAuthor";
+export { default as NewsLetter } from "./NewsLetter";
+export { default as Footer } from "./Footer";
