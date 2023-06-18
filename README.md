@@ -47,5 +47,4 @@ npm run dev
 
 - Ouvrez un navigateur web sur la machine et accédez à l'URL localhost:8000
 
-
-![Home Page ]("C:\Users\user\Desktop\Project End Study\Project\Rapport\interface\main.png")
+![Home Page ]("./frontend/public/main.png")
