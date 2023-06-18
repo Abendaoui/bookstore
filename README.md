@@ -47,4 +47,4 @@ npm run dev
 
 - Ouvrez un navigateur web sur la machine et accédez à l'URL localhost:8000
 
-![Home Page ]("./frontend/public/main.png")
+![Home Page ]("./main.png")
