@@ -45,7 +45,7 @@ npm run dev
 
 # Step Seven
 
-- Ouvrez un navigateur web sur la machine et accédez à l'URL localhost:8000
+- Ouvrez un navigateur web sur la machine et accédez à l'URL localhost:3000
 
 ![Home Page](./main.png)
 
