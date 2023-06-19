@@ -1,15 +1,12 @@
 import { createBrowserRouter, Navigate } from "react-router-dom";
-// Auth
-import AuthLayout from "../views/layouts/AuthLayout";
-import Home from "../views/products/Home";
-// Guest
-import GuestLayout from "../views/layouts/GuestLayout";
-import Login from "../views/users/Login";
-import Register from "../views/users/Register";
-import NotFound from "../views/error/NotFound";
-import Bag from "../views/products/Bag";
-import Account from "../views/users/Account";
-import Show from "../views/products/Show";
+//Layouts
+import { GuestLayout, AuthLayout, AdminLayout } from "../views/layouts";
+
+//Products
+import { Bag, Home, Show } from "../views/products";
+// Users
+import { Login, Register, Account, EditUser } from "../views/users";
+// Pages
 import {
     About,
     Contact,
@@ -19,9 +16,9 @@ import {
     Chechout,
     Return,
     OrderDetails,
+    SupriseMe,
 } from "../views/pages";
 // Admin
-import AdminLayout from "../views/layouts/AdminLayout";
 import {
     Customers,
     Dashboard,
@@ -34,6 +31,7 @@ import {
     Employees,
     Profile,
 } from "../views/admin/pages";
+// Subpages
 import {
     AddAuthor,
     AddCategorie,
@@ -44,12 +42,16 @@ import {
     ShowOrder,
     ShowTransactions,
 } from "../views/admin/pages/subpages";
-import MainPage from "../views/guest/MainPage";
-import MainSearch from "../views/guest/MainSearch";
-import MainShow from "../views/guest/MainShow";
-import MainAbout from "../views/guest/MainAbout";
-import MainContact from "../views/guest/MainContact";
-
+// Guest
+import {
+    MainPage,
+    MainAbout,
+    MainContact,
+    MainShow,
+    MainSearch,
+} from "../views/guest";
+//Error
+import NotFound from "../views/error/NotFound";
 const router = createBrowserRouter([
     {
         path: "/",
@@ -72,12 +74,20 @@ const router = createBrowserRouter([
                 element: <Search />,
             },
             {
+                path: "/books/supriseme",
+                element: <SupriseMe />,
+            },
+            {
                 path: "/your_bag",
                 element: <Bag />,
             },
             {
                 path: "/account",
                 element: <Account />,
+            },
+            {
+                path: "/account/edit",
+                element: <EditUser />,
             },
             {
                 path: "/return/:id",

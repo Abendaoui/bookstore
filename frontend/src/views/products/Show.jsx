@@ -5,7 +5,6 @@ import NewBooks from "../../components/NewBooks";
 import { useTranslation } from "react-i18next";
 import { convertDate } from "../admin/lib/helpers";
 const Show = () => {
-    const times = [1, 2, 3, 4, 5, 6, 7, 8];
     const { t } = useTranslation();
     const { book } = useParams();
     const [show, setShow] = useState(false);

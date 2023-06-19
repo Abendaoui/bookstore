@@ -29,6 +29,7 @@ Route::middleware('auth:sanctum')->group(function (){
     Route::get('/user', function (Request $request) {
         return $request->user();
     });
+    Route::put('/edituser',[UserController::class,'editUser']);
     Route::get('/getusers/{customer?}',[UserController::class,'getAllUsers']);
     Route::get('/getadmins/{customer?}',[UserController::class,'getAllAdmins']);
     Route::get('/userscount',[UserController::class,'compareUsers']);
@@ -47,6 +48,9 @@ Route::middleware('auth:sanctum')->group(function (){
     Route::get('/kidsbooks',[BookController::class,'getKidsBooks']);
     Route::get('/adultbooks',[BookController::class,'getAdultsBooks']);
     Route::get('/searchbooks/{book?}',[BookController::class,'getSearchBooks']);
+    Route::get('/supriseme',[BookController::class,'supriseMe']);
+
+
 
     // Categories
     Route::apiResource('/categories',CategoriesController::class);

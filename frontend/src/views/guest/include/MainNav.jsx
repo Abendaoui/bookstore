@@ -262,16 +262,22 @@ const MainNav = () => {
                             {t("home")}
                         </Link>
                         <Link
-                            to="/about"
+                            to="/aboutus"
                             className="text-[#C5A992] capitalize hover:bg-gray-700 hover:text-white block rounded-md px-3 py-2 text-base font-medium"
                         >
                             {t("about")}
                         </Link>
                         <Link
-                            to="/contact"
+                            to="/contactus"
                             className="text-[#C5A992] capitalize hover:bg-gray-700 hover:text-white block rounded-md px-3 py-2 text-base font-medium"
                         >
                             {t("contact")}
+                        </Link>
+                        <Link
+                            to="/home/search"
+                            className="text-[#C5A992] capitalize hover:bg-gray-700 hover:text-white block rounded-md px-3 py-2 text-base font-medium"
+                        >
+                            Search
                         </Link>
                     </div>
                 </div>

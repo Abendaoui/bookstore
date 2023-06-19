@@ -7,6 +7,7 @@ use App\Models\User;
 use Illuminate\Support\Str;
 use Illuminate\Http\Request;
 use App\Http\Resources\UserResource;
+use Illuminate\Support\Facades\Auth;
 use App\Http\Requests\StoreUserRequest;
 use App\Http\Requests\UpdateUserRequest;
 
@@ -72,7 +73,18 @@ class UserController extends Controller
         ]);
 
     }
-
+    function editUser(Request $request)
+    {
+        $data = $request->validate([
+            'name' => 'required',
+            'email' => "required|email|unique:users,email,".Auth::id(),
+            'address' => "nullable",
+            'phone' => "nullable",
+        ]);
+        $user = User::find(Auth::id());
+        $user->update($data);
+        return 'Success';
+    }
     /**
      * Remove the specified resource from storage.
      */

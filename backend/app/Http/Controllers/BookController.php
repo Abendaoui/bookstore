@@ -186,4 +186,10 @@ class BookController extends Controller
         return BookResource::collection(Book::orderByDesc('id')->paginate(6));
 
     }
+    public function supriseMe()
+    {
+        $books = Book::inRandomOrder()->paginate(1)->first();
+
+        return $books;
+    }
 }

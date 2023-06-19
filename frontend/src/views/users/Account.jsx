@@ -1,11 +1,17 @@
 import { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
-import logo from "../../assets/logo.png";
 import axiosClient from "../../server/axiosClient";
 import SingleOrder from "../../components/SingleOrder";
 import { getOrderStatus, convertDate } from "../admin/lib/helpers";
 const Account = () => {
-    const [user, setUser] = useState({});
+    const [user, setUser] = useState({
+        name: "",
+        email: "",
+        address: "",
+        phone: "",
+        created_at: "",
+        profile: "",
+    });
     const [orders, setOrders] = useState([]);
     const getUser = async () => {
         await axiosClient
@@ -32,8 +38,8 @@ const Account = () => {
         getOrders();
     }, []);
     return (
-        <section className=" mt-20 max-w-7xl mx-auto mb-[15rem]">
-            <div className="container mx-auto my-5 p-5">
+        <section className=" mt-20 max-w-7xl mx-auto ">
+            <div className="container mx-auto my-5 p-5 ">
                 <div className="md:flex no-wrap md:-mx-2 ">
                     {/* <!-- Left Side --> */}
                     <div className="w-full md:w-3/12 md:mx-2">
@@ -93,7 +99,10 @@ const Account = () => {
                                             First Name
                                         </div>
                                         <div className="px-4 py-2">
-                                            {user.name}
+                                            {user.name.substr(
+                                                0,
+                                                user.name.indexOf(" ")
+                                            )}
                                         </div>
                                     </div>
                                     <div className="grid grid-cols-2">
@@ -101,7 +110,9 @@ const Account = () => {
                                             Last Name
                                         </div>
                                         <div className="px-4 py-2">
-                                            {user.name}
+                                            {user.name.substr(
+                                                user.name.indexOf(" ") + 1
+                                            )}
                                         </div>
                                     </div>
                                     <div className="grid grid-cols-2">
@@ -109,7 +120,9 @@ const Account = () => {
                                             Contact No.
                                         </div>
                                         <div className="px-4 py-2">
-                                            {user.phone ? phone : "not set"}
+                                            {user.phone
+                                                ? user.phone
+                                                : "not set"}
                                         </div>
                                     </div>
                                     <div className="grid grid-cols-2">
@@ -117,8 +130,8 @@ const Account = () => {
                                             Address
                                         </div>
                                         <div className="px-4 py-2">
-                                            {user.adress
-                                                ? user.adress
+                                            {user.address
+                                                ? user.address
                                                 : "not set"}
                                         </div>
                                     </div>
@@ -137,13 +150,18 @@ const Account = () => {
                                     </div>
                                 </div>
                             </div>
+                            <Link
+                                to="/account/edit"
+                                className="block text-center w-full text-sm font-semibold rounded-lg hover:bg-gray-100 focus:outline-none focus:shadow-outline focus:bg-gray-100 hover:shadow-xs p-3 my-4"
+                            >
+                                Edit Information
+                            </Link>
                         </div>
                         {/* <!-- End of about section --> */}
 
                         <div className="my-4"></div>
 
-                        {/* <!-- Experience and education --> */}
-                        <div className="bg-white p-3 shadow-sm rounded-sm border-t-4 border-[#c5a992]">
+                        <div className="bg-white p-3 shadow-sm rounded-sm border-t-4 border-[#c5a992] max-h-96 overflow-auto">
                             <div className="">
                                 <div className="">
                                     <div className="flex items-center space-x-2 font-semibold text-gray-900 leading-8 mb-3">

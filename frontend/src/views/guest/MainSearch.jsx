@@ -29,7 +29,7 @@ const MainSearch = () => {
         <>
             <MainNav />
             <section className=" dark:bg-gray-900 mx-auto max-w-7xl mt-28 mb-20">
-                <article className="mx-auto max-w-xl mt-16">
+                <article className="mx-auto max-w-xl mt-16 p-10">
                     <form class="flex items-center">
                         <label for="simple-search" class="sr-only">
                             Search
@@ -62,7 +62,7 @@ const MainSearch = () => {
                     </form>
                 </article>
                 {load ? (
-                    <article className="container px-6 py-8 mx-auto animate-pulse">
+                    <article className="container px-6 py-8 mx-auto animate-pulse text-center">
                         <div className="grid grid-cols-1 gap-8 mt-8 xl:mt-12 xl:gap-12 sm:grid-cols-2 xl:grid-cols-4 lg:grid-cols-3">
                             {times.map((time) => {
                                 return (

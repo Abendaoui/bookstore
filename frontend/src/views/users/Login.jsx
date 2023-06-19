@@ -8,31 +8,6 @@ const Login = () => {
     const email = useRef();
     const password = useRef();
     const [error, setError] = useState("");
-    // const handleLogin = async (ev) => {
-    //     ev.preventDefault();
-    //     const formData = new FormData();
-    //     formData.append("email", email.current.value);
-    //     formData.append("password", password.current.value);
-    //     await axiosClient
-    //         .post("/login", formData)
-    //         .then(({ data }) => {
-    //             if (data) {
-    //                 setUser(data.user);
-    //                 if (data.user.is_admin) {
-    //                     setAdminToken(data.token);
-    //                 } else {
-    //                     setToken(data.token);
-    //                 }
-    //             }
-    //         })
-    //         .catch((err) => {
-    //             if (err.response.data.message) {
-    //                 setError(err.response.data.message);
-    //             } else {
-    //                 setError(err.response.data.errors.email);
-    //             }
-    //         });
-    // };
     const handleLogin = async (ev) => {
         ev.preventDefault();
         const formData = new FormData();
@@ -126,16 +101,6 @@ const Login = () => {
                                     />
                                 </svg>
                             </a>
-
-                            {/* <h1 className="mt-2 sr-only text-2xl font-bold text-gray-900 sm:text-3xl md:text-4xl">
-                                Welcome to Squid 🦑
-                            </h1>
-
-                            <p className="mt-4 sr-only leading-relaxed text-gray-500">
-                                Lorem, ipsum dolor sit amet consectetur
-                                adipisicing elit. Eligendi nam dolorum aliquam,
-                                quibusdam aperiam voluptatum.
-                            </p> */}
                         </div>
 
                         <form

@@ -7,3 +7,5 @@ export {default as OrderDetails} from "./OrderDetails"
 export {default as Payement} from "./Payement"
 export {default as Return} from "./Return"
 export { default as Search } from "./Search";
+export { default as SupriseMe } from "./SupriseMe";
+

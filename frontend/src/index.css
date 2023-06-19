@@ -486,9 +486,12 @@ input,select{
 .drop a {
     transition: all 0.3s;
 }
-.drop a:hover {
+.drop a:hover,.drop button:hover {
     background-color: #d9c3b1;
     color: white;
+}
+.drop button{
+    @apply w-full text-start
 }
 /* Laod */
 .loading-dot {
