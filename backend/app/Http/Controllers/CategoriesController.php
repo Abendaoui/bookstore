@@ -14,11 +14,6 @@ class CategoriesController extends Controller
      */
     public function index()
     {
-        $categories = Categories::paginate(8);
-        return CategoryResource::collection($categories);
-    }
-    public function getAllCategories()
-    {
         $categories = Categories::select('categories.id', 'categories.name', 'categories.image')
             ->whereExists(function ($query) {
                 $query->select('books.id')
@@ -26,6 +21,11 @@ class CategoriesController extends Controller
                     ->whereRaw('books.category_id = categories.id');
             })
             ->get();
+        return CategoryResource::collection($categories);
+    }
+    public function getAllCategories()
+    {
+        $categories = Categories::get();
 
         return CategoryResource::collection($categories);
     }

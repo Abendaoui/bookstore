@@ -7,7 +7,6 @@ const StateContext = createContext({
     setToken: () => {},
     setUser: () => {},
     setAdminToken: () => {},
-    
 });
 
 const ContextProvider = ({ children }) => {
