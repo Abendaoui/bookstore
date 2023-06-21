@@ -25,8 +25,6 @@ import {
     Messages,
     Orders,
     Products,
-    Settings,
-    Support,
     Transactions,
     Employees,
     Profile,
@@ -221,14 +219,6 @@ const router = createBrowserRouter([
             {
                 path: "messages",
                 element: <Messages />,
-            },
-            {
-                path: "settings",
-                element: <Settings />,
-            },
-            {
-                path: "support",
-                element: <Support />,
             },
             {
                 path: "profile",
