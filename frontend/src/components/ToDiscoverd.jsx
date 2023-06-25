@@ -28,7 +28,7 @@ const ToDiscoverd = () => {
     }, []);
     useEffect(() => {
         AOS.init({
-            duration: 2000,
+            duration: 3000,
         });
     }, []);
     return (
@@ -48,7 +48,7 @@ const ToDiscoverd = () => {
                             <div
                                 key={id}
                                 className="flex-shrink-0 w-28 h-28 mr-8 rounded-full shadow-md mb-10"
-                                data-aos="zoom-in"
+                                data-aos="slide-up"
                             >
                                 <Link
                                     to={`/categories/${name}`}
